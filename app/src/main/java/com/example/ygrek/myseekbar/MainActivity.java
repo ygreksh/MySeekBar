@@ -2,6 +2,7 @@ package com.example.ygrek.myseekbar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -15,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LinearLayout mainLayout = (LinearLayout)findViewById(R.id.mainLayout);
+        Draw2D draw2D = new Draw2D(this);
+        mainLayout.addView(draw2D);
+
         seekBarAzi = (SeekBar) findViewById(R.id.seekBarAzi);
         textViewAzi = (TextView) findViewById(R.id.txtViewAzi);
         seekBarAlt = (SeekBar) findViewById(R.id.seekBarAlt);
@@ -57,5 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }

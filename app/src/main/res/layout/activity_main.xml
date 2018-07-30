@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
         android:id="@+id/txtViewAzi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
+        android:textAlignment="center"
         android:textSize="30sp" />
 
     <SeekBar
@@ -18,13 +20,14 @@
         android:layout_height="wrap_content"
         android:max="360"
         android:progress="180" />
+
     <TextView
         android:id="@+id/txtViewAlt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
+        android:textAlignment="center"
         android:textSize="30sp" />
 
     <SeekBar
